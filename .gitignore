@@ -117,4 +117,20 @@ DerivedData
 .DS_Store
 xcuserdata
 
+#fredy
+*.o
+*.lo
+*.dirstamp
+*.deps
+_install/
+.libs/
+project/project.m4
+
+config.status
+doc/man/
+libplatform/config.h
+libplatform/stamp-h1
+libtool
+project/project.m4
+
 
