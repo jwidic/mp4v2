@@ -15,18 +15,23 @@ fi
 if [ -f config.log  ]; then
         make distclean
 fi
-./configure --prefix=$INSTALL_PATH \
-                --disable-debug    \
-                --disable-shared
-#        --host=gcc
+
+
+
+#./configure --host=arm-linux-gnueabihf --build=x86_64 --target=arm-linux 
+./configure  --host=arm-linux-gnueabihf --prefix=$INSTALL_PATH --disable-debug -disable-shared 
+
+#                CC=gcc  \
+#                CXX=g++
 #       --build=i486
+#                --host=arm-linux  \
 #        --disable-debug  \
 #        --enable-optimise \
 #        --disable-fvisibility \
 #       --disable-gch \
 #        --disable--largefile \
 #        --disable--
-
+#				--build=i486-linux-gnu \
 
 if [ $? -eq 0 ]; then
         make
@@ -37,5 +42,3 @@ if [ $? -eq 0 ]; then
 
 fi
 
-~                                                                                                                                                                                                           
-~                                                                                                                    
